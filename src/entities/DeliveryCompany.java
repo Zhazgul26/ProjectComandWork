@@ -12,6 +12,9 @@ public class DeliveryCompany {
         this.deliveryCompanyName = deliveryCompanyName;
         this.customers = customers;
     }
+    public DeliveryCompany(String deliveryCompanyName){
+        this.deliveryCompanyName = deliveryCompanyName;
+    }
 
     public String getDeliveryCompanyName() {
         return deliveryCompanyName;
@@ -31,9 +34,8 @@ public class DeliveryCompany {
 
     @Override
     public String toString() {
-        return "DeliveryCompany{" +
-                "deliveryCompanyName='" + deliveryCompanyName + '\'' +
-                ", customers=" + customers +
-                '}';
+        return "DeliveryCompany" +
+                "\ndeliveryCompanyName:" + deliveryCompanyName+
+                "\ncustomers          :"+ customers;
     }
 }
