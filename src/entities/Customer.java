@@ -27,6 +27,9 @@ public class Customer {
         this.order = order;
     }
 
+    public void addOrder(Order order){
+        this.order.add(order);
+    }
     @Override
     public String toString() {
         return "Customer{" +
