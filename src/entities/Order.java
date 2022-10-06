@@ -23,4 +23,12 @@ public class Order {
     public void setLoad(Load load) {
         this.load = load;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderFee=" + orderFee +
+                ", load=" + load +
+                '}';
+    }
 }
