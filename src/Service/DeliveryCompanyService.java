@@ -12,7 +12,7 @@ public class DeliveryCompanyService {
 
     public void acceptOrder(String deliveryCompanyName, String customerName, Order order){
         Optional<DeliveryCompany> optionalDeliveryCompany = deliveryCompanies.stream().filter(x-> x.equals(deliveryCompanyName)).findFirst();
-        if (order.getLoad().getHeight() * order.getLoad().getLength() * order.getLoad().getWidth() > DeliveryCompany.MAX_CAPACITY_PER_SQUARE_SANTIMETER){
+        if (order.getLoad().getHeight() * order.getLoad().getLength() * order.getLoad().getWidth() < DeliveryCompany.MAX_CAPACITY_PER_SQUARE_SANTIMETER){
             optionalDeliveryCompany.flatMap(x -> x.getCustomers().stream().filter(y -> y.getCustomerName().equals(customerName)).findFirst()).ifPresent(z -> z.setOrder((List<Order>) order));
 
         }
