@@ -27,5 +27,12 @@ public class Customer {
         this.order = order;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerName='" + customerName + '\'' +
+                ", order=" + order +
+                '}';
+    }
 }
 

@@ -1,5 +1,13 @@
+import entities.Customer;
+import entities.DeliveryCompany;
+import entities.Load;
+import entities.Order;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
     }
 }

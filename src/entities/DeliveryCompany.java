@@ -28,4 +28,12 @@ public class DeliveryCompany {
     public void setCustomers(List<Customer> customers) {
         this.customers = customers;
     }
+
+    @Override
+    public String toString() {
+        return "DeliveryCompany{" +
+                "deliveryCompanyName='" + deliveryCompanyName + '\'' +
+                ", customers=" + customers +
+                '}';
+    }
 }
